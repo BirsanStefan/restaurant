@@ -2,4 +2,130 @@
 	width: 300px;
 	background-color: #e9f0ee;
 	min-height: 100vh;
+	.profileInfo{
+		&__picture{
+			background-color: #a7a7a7;
+			background-position: center;
+			background-size: cover;
+			border-radius: 50%;
+			display: block;
+			width: 70px;
+			height: 70px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 15px;
+		}
+		&__name{
+			font-family: "FuturaPT", sans-serif;
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 1.33;
+			color: #495e6b;
+			text-align: center;
+			padding-top: 12px; 
+			padding-bottom: 15px;
+			margin: 0;
+			&__link{
+				font-weight: 500;
+				color: #495e6b;
+				text-decoration: none;
+				&:hover{
+					color: #8dc5db;
+				}
+			}
+		}
+	}
+	.leftNav{
+		&__list{
+			list-style-type: none;
+			padding-left: 0;;
+			&__item{
+				&__link{
+					display: block;
+					text-decoration: none;
+					font-family: 'FuturaPT', sans-serif;
+					font-size: 18px;
+					font-weight: normal;
+					line-height: 1.35;
+					color: #858585;
+					padding: 10px 20px;
+					position: relative;
+					&:hover{
+						background: #f05735;
+						color: #fff;
+						&::before{
+							content: '';
+							position: absolute;
+							top: 12px;
+							left: 270px;
+							border-left: 10px solid #fff;
+							border-top: 10px solid transparent;
+							border-bottom: 10px solid transparent;
+						}
+						&::after {
+							content: '';
+							position: absolute;
+							left: 270px;
+							top: 17px;
+							border-left: 5px solid #f05735;
+							border-top: 5px solid transparent;
+							border-bottom: 5px solid transparent;
+						}
+					}
+					&::before{
+						content: '';
+						position: absolute;
+						top: 12px;
+						left: 270px;
+						border-left: 10px solid #cecece;
+						border-top: 10px solid transparent;
+						border-bottom: 10px solid transparent;
+					}
+					&::after {
+						content: '';
+						position: absolute;
+						left: 270px;
+						top: 17px;
+						border-left: 5px solid #e9f0ee;
+						border-top: 5px solid transparent;
+						border-bottom: 5px solid transparent;
+					}
+					img{
+						width: 20px;
+						height: 20px;
+						vertical-align: middle;
+					}
+					span{
+						padding-left: 10px;
+						position: relative;
+					}
+				}
+			}
+			.active{
+				background-color: #f05735;
+				.leftNav__list__item__link{
+					color: white; 
+					position: relative;
+					&::before{
+						content: '';
+						position: absolute;
+						top: 12px;
+						left: 270px;
+						border-left: 10px solid #fff;
+						border-top: 10px solid transparent;
+						border-bottom: 10px solid transparent;
+					}
+					&::after {
+						content: '';
+						position: absolute;
+						left: 270px;
+						top: 17px;
+						border-left: 5px solid #f05735;
+						border-top: 5px solid transparent;
+						border-bottom: 5px solid transparent;
+					}
+				}
+			}
+		}
+	}
 }
