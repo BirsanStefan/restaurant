@@ -29,6 +29,7 @@
 				font-weight: 500;
 				color: #495e6b;
 				text-decoration: none;
+				transition: all .25s linear;
 				&:hover{
 					color: #8dc5db;
 				}
@@ -49,7 +50,8 @@
 					line-height: 1.35;
 					color: #858585;
 					padding: 10px 20px;
-					position: relative;
+					position: relative;        
+					transition: all .25s linear;
 					&:hover{
 						background: #f05735;
 						color: #fff;

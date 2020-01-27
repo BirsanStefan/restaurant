@@ -1,0 +1,88 @@
+.boxesContent{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 25px 30px 25px; 
+    .box-element{
+        width: 30%;
+        &__top{
+            border-radius: 8px 8px 0 0; 
+            box-shadow: 0 3.5px 38px 0 rgba(0, 0, 0, 0.16);
+            padding-top: 50px; 
+            &__whiteCircle{
+                width: 200px;
+                height: 200px; 
+                border-radius: 50%; 
+                background-color: #fff;
+                margin-left: auto;
+                margin-right: auto; 
+                box-shadow: 0 13.5px 19.5px 0 rgba(0, 0, 0, 0.05);
+                img{}
+            }
+            h3{
+                margin: 0;
+                padding-top: 20px;
+                padding-bottom: 40px;
+                text-shadow: 0 3.5px 8.5px rgba(0, 0, 0, 0.08);
+                font-family: 'FuturaPT', sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 1.4;
+                text-align: center; 
+                color: #fff; 
+            }
+        } 
+        .gray{
+            background-color: #a1a1a1;
+        }
+        .orange{
+            background-color: #ffbe68; 
+        }
+        &__bottom{
+            background-color: #fff; 
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 3.5px 38px 0 rgba(0, 0, 0, 0.16);
+            padding: 25px 20px 10px 20px;  
+            &__topTitle{
+                display: flex;
+                justify-content: space-between;
+                h4{
+                    font-family: 'FuturaPT', sans-serif;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 1.32; 
+                    color: #231f20; 
+                    margin: 0;
+                }
+                a{  
+                    text-decoration: none;
+                    color: #231f20; 
+                    &:hover{
+                        color: #8dc5db; 
+                    }
+                }
+            }
+            
+            &__details{
+                display: flex;
+                justify-content: center; 
+                list-style-type: none;
+                padding-left: 0;
+                text-align: center;
+                &__item{
+                    padding-left: 9px;
+                    padding-right: 9px; 
+                    font-family: 'FuturaPT', sans-serif;
+                    font-size: 11px; 
+                    line-height: 1.35; 
+                    color: #696969;  
+                    border-right: 1px solid #696969; 
+                } 
+                .borderNone{
+                    border-right: none; 
+                }
+            }
+        } 
+    }
+}
+

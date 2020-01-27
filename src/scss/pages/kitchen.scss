@@ -1,0 +1,101 @@
+.homeBtn{
+    padding-bottom: 30px; 
+    &__link{
+        text-decoration: none;
+        font-size: 10px;
+        line-height: 1.35;
+        text-align: left;
+        color: #062538;
+        font-size: 15px;
+        transition: all .25s linear;
+        &:hover{
+            color: #8dc5db;
+        }
+    }
+}
+.main-title{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    h1{
+        margin: 0;
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 1.34;
+        text-align: left;
+        color: #062538;
+        font-family: 'FuturaPT', sans-serif;
+    }
+}
+.topMenu{
+    display: flex;
+    width: calc(100% + 44px);
+    margin-left: -22px;
+    .topMenuItem{
+        display: block;
+        background-color: #e8e8e8;
+        padding: 15px;
+        width: 100%;
+        text-decoration: none;
+        color: #495e6b;
+        text-align: center;
+        font-size: 18px;
+        border-right: 1px solid #cccccc;
+        font-family: 'FuturaPT', sans-serif;
+        transition: all .25s linear;
+        &:hover{
+            color: #e8e8e8;
+            background-color: #334b31;
+        }
+    }
+    .topMenuItem.active{
+        background-color: #4c6b49;
+        color: #fff;        
+        transition: all .25s linear;
+        &:hover{
+            color: #e8e8e8;
+            background: #334b31;
+        }
+    }
+}
+
+.mainContent{
+    margin-top: 60px;
+    background: #fff;
+    width: 100%;
+    border-radius: 3.5px;
+    box-shadow: 0 3.5px 16px 0 rgba(0, 0, 0, 0.05);
+    &__title{
+        padding-left: 25px; 
+    }
+    .nextPrev{
+        padding-left: 25px;  
+        padding-right: 25px;
+    }
+}
+
+.smallText{
+    padding-left: 25px; 
+    font-family: 'FuturaPT', sans-serif;
+    font-size: 14px; 
+    font-weight: 500;
+    line-height: 1.35;
+    color: #696969;
+    a{
+        text-decoration: none;
+        color: #696969;
+        transition: all .25s linear;
+        &:hover{
+            color: #8dc5db;
+        }
+    }
+}
+
+.breakfast{
+    .mainContent__title{
+        padding-top: 40px; 
+    }
+}
+
+.dinner{
+    padding-bottom: 50px; 
+}

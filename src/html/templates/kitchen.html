@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+  <div class="wrapper">
+
+    @@include('../partials/components/left.html')
+
+    <div class="right">
+
+      <div class="homeBtn">
+        <a href="index.html" class="homeBtn__link">
+          <img src="./assets/images/icon12.svg" alt="">
+          <span>/Kitchen</span>
+        </a>
+      </div>
+
+      <div class="main-title">
+        <h1>Kitchen</h1>
+      </div>
+
+      <div class="topMenu">
+        <a href="#" class="topMenuItem">Raw Materials</a>
+        <a href="#" class="topMenuItem">Meals</a>
+        <a href="#" class="topMenuItem active">Menus</a>
+      </div>
+
+      <div class="mainContent">
+        <div class="main-title mainContent__title">
+          <h1>Meals Selection</h1>
+        </div>
+
+        <div class="smallText">
+          <p>Week 1</p>
+          <a href="#">Menu type</a>
+        </div>
+
+        @@include('../partials/components/weekdays.html')
+
+        <div class="breakfast">
+
+          <div class="main-title mainContent__title">
+            <h1>Breakfast</h1>
+          </div>
+
+
+          <div class="breakfast__box">
+            @@include('../partials/components/box-element.html', {
+
+                "image1": "<img src=\"./assets/images/image1.png\" alt=\"\">",
+                "text1": "Veggie Omlette",
+                "title1": "Calories 954",
+                "allergies1": "Allergies?",
+                "fat1": "29.8 g Fat",
+                "carbs1": "9.1 g Carbs",
+                "protein1": "21.7 g Protein",
+
+                "image2": "<img src=\"./assets/images/image1.png\" alt=\"\">",
+                "text2": "Veggie Omlette",
+                "title2": "Calories 954",
+                "allergies2": "Allergies?",
+                "fat2": "29.8 g Fat",
+                "carbs2": "9.1 g Carbs",
+                "protein2": "21.7 g Protein",
+
+                "image3": "<img src=\"./assets/images/image1.png\" alt=\"\">",
+                "text3": "Veggie Omlette",
+                "title3": "Calories 954",
+                "allergies3": "Allergies?",
+                "fat3": "29.8 g Fat",
+                "carbs3": "9.1 g Carbs",
+                "protein3": "21.7 g Protein"
+
+              })  
+          </div> 
+          
+        </div> 
+
+
+        <div class="breakfast">
+          
+          <div class="main-title mainContent__title">
+            <h1>Lunch</h1>
+          </div>
+
+
+          <div class="breakfast__box">
+            @@include('../partials/components/box-element.html', {
+
+                "image1": "<img src=\"./assets/images/image1.png\" alt=\"\">",
+                "text1": "Veggie Omlette",
+                "title1": "Calories 954",
+                "allergies1": "Allergies?",
+                "fat1": "29.8 g Fat",
+                "carbs1": "9.1 g Carbs",
+                "protein1": "21.7 g Protein",
+
+                "image2": "<img src=\"./assets/images/image1.png\" alt=\"\">",
+                "text2": "Veggie Omlette",
+                "title2": "Calories 954",
+                "allergies2": "Allergies?",
+                "fat2": "29.8 g Fat",
+                "carbs2": "9.1 g Carbs",
+                "protein2": "21.7 g Protein",
+
+                "image3": "<img src=\"./assets/images/image1.png\" alt=\"\">",
+                "text3": "Veggie Omlette",
+                "title3": "Calories 954",
+                "allergies3": "Allergies?",
+                "fat3": "29.8 g Fat",
+                "carbs3": "9.1 g Carbs",
+                "protein3": "21.7 g Protein"
+
+              })  
+          </div> 
+          
+        </div> 
+
+        <div class="breakfast dinner">
+          
+          <div class="main-title mainContent__title">
+            <h1>Dinner</h1>
+          </div>
+
+
+          <div class="breakfast__box">
+            @@include('../partials/components/box-element.html', {
+
+                "image1": "<img src=\"./assets/images/image1.png\" alt=\"\">",
+                "text1": "Veggie Omlette",
+                "title1": "Calories 954",
+                "allergies1": "Allergies?",
+                "fat1": "29.8 g Fat",
+                "carbs1": "9.1 g Carbs",
+                "protein1": "21.7 g Protein",
+
+                "image2": "<img src=\"./assets/images/image1.png\" alt=\"\">",
+                "text2": "Veggie Omlette",
+                "title2": "Calories 954",
+                "allergies2": "Allergies?",
+                "fat2": "29.8 g Fat",
+                "carbs2": "9.1 g Carbs",
+                "protein2": "21.7 g Protein",
+
+                "image3": "<img src=\"./assets/images/image1.png\" alt=\"\">",
+                "text3": "Veggie Omlette",
+                "title3": "Calories 954",
+                "allergies3": "Allergies?",
+                "fat3": "29.8 g Fat",
+                "carbs3": "9.1 g Carbs",
+                "protein3": "21.7 g Protein"
+
+              })  
+          </div> 
+          
+        </div> 
+      </div>
+
+    </div>
+
+  </div>
+
+  @@include('../partials/scripts/common.html')
+
+</body>
+
+</html>
