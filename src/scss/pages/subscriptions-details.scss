@@ -1,0 +1,180 @@
+.topBarSubscriptions{
+    font-family: 'FuturaPT', sans-serif;
+    font-size: 11px;
+    line-height: 1.36;
+    color: #062538;
+    padding: 10px 20px;
+    border-radius: 3.5px;
+    background-color: #ffefd9;
+}
+.topRightBtn{
+    margin-left: auto;
+    width: 100px;
+    height: 35px;  
+    border: 1px solid #7fb879; 
+    border-radius: 5px;  
+    box-shadow: 0 2.5px 5px 0 rgba(127, 184, 121, 0.42);  
+    transition: all .25s linear;
+    margin-top: 30px;   
+    margin-right: 30px;   
+    &:hover{
+        background: #7fb879;
+        border: 2px solid #7fb879;
+    }
+    .button-empty-green{
+        text-decoration: none;
+        display: block;  
+        color: #7fb879; 
+        width: 100%;
+        height: 100%;
+        font-family: 'FuturaPT', sans-serif;
+        font-weight: 600;
+        transition: all .25s linear;
+        display: flex; 
+        justify-content: center;
+        align-items: center;  
+        &:hover{
+            color: #fff;  
+        }
+    } 
+}
+
+.main-title.subscription{
+    padding: 0; 
+}
+.whiteBoxA{ 
+    background: #fff;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 20px 30px 30px;   
+    &__wrap{
+        display: flex;
+        justify-content: space-between;  
+        &__element{
+            width: 32%; 
+            &__myBtn{  
+                width: 150px;
+                height: 35px; 
+                transition: all .25s linear;
+                margin-top: 20px; 
+                margin-left: auto;    
+                .button-green{
+                    text-decoration: none;
+                    display: block;  
+                    color: #fff; 
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%; 
+                    font-family: 'FuturaPT', sans-serif;
+                    font-weight: 600;
+                    box-shadow: 0 2.5px 5px 0 rgba(127, 184, 121, 0.42);
+                    background-color: #7fb879;
+                    border: 1px solid #7fb879;
+                    transition: all .25s linear;
+                    border-radius: 5px;
+                    &:hover{
+                        color: #7fb879;
+                        background: #fff;  
+                    }
+                } 
+                .button-empty-blue{
+                    text-decoration: none;
+                    display: block;  
+                    color: #8dc5db; 
+                    border: solid 1px #8dc5db;
+                    border-radius: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;  
+                    font-family: 'FuturaPT', sans-serif;
+                    font-weight: 600;
+                    transition: all .25s linear;
+                    box-shadow: 0 2.5px 5px 0 rgba(127, 184, 121, 0.42); 
+                    &:hover{
+                        color: #fff; 
+                        background: #8dc5db; 
+                    }
+                }
+            }
+            &__endSubscr{
+                padding-top: 30px; 
+                &__link{
+                    text-decoration: none;
+                    text-align: right; 
+                    padding-top: 30px; 
+                    font-family: 'FuturaPT', sans-serif;
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: #ff6868;
+                    padding: 5px;
+                    border-radius: 4px;
+                    transition: all .25s linear;
+                    &:hover{
+                        color: #fff;
+                        background: #ff6868; 
+                    } 
+                }
+            }
+            &__detailsSubscr{
+                font-family: 'FuturaPT', sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 32px;  
+                color: #696969;
+                padding-top: 10px;   
+                a{
+                    text-decoration: none;
+                    color: #696969;
+                    padding-left: 30px; 
+                    &:hover{
+                        color: #8dc5db;  
+                    }
+                }
+                span{
+                    padding-left: 30px; 
+                }
+                .delivery-details{
+                    padding-left: 0; 
+                }
+            } 
+        }
+        .rihtElem{
+            width: 25%;
+            text-align: right;  
+        }
+        .delivery-elem{
+            width: 80%;    
+        }
+    }
+}
+.smallText__regular{
+    padding-left: 30px; 
+}
+.breakfast__box.subscription-det{
+    .box-element__top__whiteCircle{ 
+        margin-top: 20px;
+    }
+    .box-element__top h3{
+        padding-bottom: 20px;
+    }
+}
+
+.mainContent{
+    &__mealsBox{
+        display: flex;
+        justify-content: space-between;
+        &__elem{
+            width: 50%;
+            .whiteBoxA__wrap__element__myBtn{
+                margin-top: 50px; 
+                margin-left: auto;
+                margin-right: 30px; 
+            }
+        }
+    }
+}

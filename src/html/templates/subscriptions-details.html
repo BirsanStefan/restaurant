@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+  <div class="wrapper">
+
+    @@include('../partials/components/left.html')
+
+    <div class="right">
+
+      <div class="homeBtn">
+        <a href="index.html" class="homeBtn__link">
+          <img src="./assets/images/icon12.svg" alt="">
+        </a>
+        <a href="subscriptions.html" class="homeBtn__link">
+          <span>/Subscriptions</span>
+        </a>
+        /123543
+      </div>
+
+      <div class="topBarSubscriptions">
+        Subscription is paused and will resume on 12/23/2019
+      </div>
+
+      <div class="topRightBtn">
+        <a href="#" class="button-empty-green">
+          INVOICE
+        </a>
+      </div>
+
+      
+
+      <div class="whiteBoxA">
+        <div class="main-title subscription">
+          <h1>Subscription</h1>
+        </div>
+        <div class="whiteBoxA__wrap">
+          <div class="whiteBoxA__wrap__element">
+            <div class="whiteBoxA__wrap__element__detailsSubscr">
+              Subscription Id <span>123543</span><br/>
+              Customer name <a href="#">Khaled Hasan</a><br/>
+              Subscription plan <span>One Month</span><br/>
+              Menu type <span>Regular</span><br/>
+              Meals options <span>Breakfast, Lunch</span>
+            </div>
+          </div>
+  
+          <div class="whiteBoxA__wrap__element">
+            <div class="whiteBoxA__wrap__element__detailsSubscr">
+              Status <span>Paused</span><br/>
+              Start date <span>01/01/2019</span><br/>
+              End date <span>01/02/2019</span><br/>
+              Consumed days <span>10 of 20</span>
+            </div>
+          </div>
+  
+          <div class="whiteBoxA__wrap__element rihtElem">
+            <div class="whiteBoxA__wrap__element__myBtn">
+              <a href="#" class="button-green">
+                RESUME
+              </a>
+            </div>
+            <div class="whiteBoxA__wrap__element__endSubscr">
+              <a href="#" class="whiteBoxA__wrap__element__endSubscr__link">END SUBSCRIPTION</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+
+      <div class="whiteBoxA">
+        <div class="main-title subscription">
+          <h1>Delivery</h1>
+        </div>
+        <div class="whiteBoxA__wrap">
+          <div class="whiteBoxA__wrap__element delivery-elem">
+            <div class="whiteBoxA__wrap__element__detailsSubscr">
+              Delivery address <span>King Abdullah street, Al read district, Riyadh, Saudi Arabia</span><br/>
+              Delivery time <span>7:00 a.m. - 10:00 a.m.</span><br/>
+              Note <span>House number 5</span>
+            </div>
+          </div>
+  
+          <div class="whiteBoxA__wrap__element rihtElem">
+            <div class="whiteBoxA__wrap__element__myBtn">
+              <a href="#" class="button-empty-blue">
+                EDIT
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+
+      <div class="whiteBoxA">
+        <div class="main-title subscription">
+          <h1>Review</h1>
+        </div>
+        <div class="whiteBoxA__wrap">
+          <div class="whiteBoxA__wrap__element delivery-elem">
+            <div class="whiteBoxA__wrap__element__detailsSubscr">
+              <a href="#" class="delivery-details">Meals reviews: 3</a> <a href="#">Subscription review</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+
+      <div class="mainContent">
+        <div class="mainContent__mealsBox">
+          <div class="mainContent__mealsBox__elem">
+            <div class="main-title mainContent__title">
+              <h1>Meals</h1>
+            </div>
+    
+            <div class="smallText">
+              <p>Week 1</p>
+              <p>Menu type <span class="smallText__regular">Regular</span></p> 
+            </div>
+          </div>
+
+          <div class="mainContent__mealsBox__elem">
+            <div class="whiteBoxA__wrap__element__myBtn">
+              <a href="#" class="button-empty-blue">
+                EDIT
+              </a>
+            </div>
+          </div>
+        </div>
+        
+
+        @@include('../partials/components/weekdays.html')
+
+        <div class="breakfast">
+
+          <div class="main-title mainContent__title">
+            <h1>Breakfast</h1>
+          </div>
+
+
+          <div class="breakfast__box subscription-det">
+            @@include('../partials/components/box-element-b.html', {
+
+                "mainTitle1": "MAIN",
+                "image1": "<img src=\"./assets/images/image1.png\" alt=\"\">",
+                "text1": "Veggie Omlette",
+                "title1": "Calories 954",
+                "allergies1": "Allergies?",
+                "fat1": "29.8 g Fat",
+                "carbs1": "9.1 g Carbs",
+                "protein1": "21.7 g Protein",
+                "description1": "Stuffed with gently sautéed vegetables and lots of cheese. Yummy indeed Stuffed with gently sautéed.",
+
+                
+                "mainTitle2": "SIDE DISH",
+                "image2": "<img src=\"./assets/images/image1.png\" alt=\"\">",
+                "text2": "Veggie Omlette",
+                "title2": "Calories 954",
+                "allergies2": "Allergies?",
+                "fat2": "29.8 g Fat",
+                "carbs2": "9.1 g Carbs",
+                "protein2": "21.7 g Protein",
+                "description2": "Stuffed with gently sautéed vegetables and lots of cheese. Yummy indeed Stuffed with gently sautéed.",
+
+                
+                "mainTitle3": "SNAK",
+                "image3": "<img src=\"./assets/images/image1.png\" alt=\"\">",
+                "text3": "Veggie Omlette",
+                "title3": "Calories 954",
+                "allergies3": "Allergies?",
+                "fat3": "29.8 g Fat",
+                "carbs3": "9.1 g Carbs",
+                "protein3": "21.7 g Protein",
+                "description3": "Stuffed with gently sautéed vegetables and lots of cheese. Yummy indeed Stuffed with gently sautéed."
+
+              })  
+          </div> 
+          
+        </div> 
+
+
+        <div class="breakfast">
+
+          <div class="main-title mainContent__title">
+            <h1>Lunch</h1>
+          </div>
+
+
+          <div class="breakfast__box subscription-det">
+            @@include('../partials/components/box-element-b.html', {
+
+                "mainTitle1": "MAIN",
+                "image1": "<img src=\"./assets/images/image1.png\" alt=\"\">",
+                "text1": "Veggie Omlette",
+                "title1": "Calories 954",
+                "allergies1": "Allergies?",
+                "fat1": "29.8 g Fat",
+                "carbs1": "9.1 g Carbs",
+                "protein1": "21.7 g Protein",
+                "description1": "Stuffed with gently sautéed vegetables and lots of cheese. Yummy indeed Stuffed with gently sautéed.",
+
+                
+                "mainTitle2": "SIDE DISH",
+                "image2": "<img src=\"./assets/images/image1.png\" alt=\"\">",
+                "text2": "Veggie Omlette",
+                "title2": "Calories 954",
+                "allergies2": "Allergies?",
+                "fat2": "29.8 g Fat",
+                "carbs2": "9.1 g Carbs",
+                "protein2": "21.7 g Protein",
+                "description2": "Stuffed with gently sautéed vegetables and lots of cheese. Yummy indeed Stuffed with gently sautéed.",
+
+                
+                "mainTitle3": "SNAK",
+                "image3": "<img src=\"./assets/images/image1.png\" alt=\"\">",
+                "text3": "Veggie Omlette",
+                "title3": "Calories 954",
+                "allergies3": "Allergies?",
+                "fat3": "29.8 g Fat",
+                "carbs3": "9.1 g Carbs",
+                "protein3": "21.7 g Protein",
+                "description3": "Stuffed with gently sautéed vegetables and lots of cheese. Yummy indeed Stuffed with gently sautéed."
+
+              })  
+          </div> 
+          
+        </div>
+
+        <div class="breakfast">
+
+          <div class="main-title mainContent__title">
+            <h1>Dinner</h1>
+          </div>
+
+
+          <div class="breakfast__box dinner subscription-det"> 
+            @@include('../partials/components/box-element-b.html', {
+
+                "mainTitle1": "MAIN",
+                "image1": "<img src=\"./assets/images/image1.png\" alt=\"\">",
+                "text1": "Veggie Omlette",
+                "title1": "Calories 954",
+                "allergies1": "Allergies?",
+                "fat1": "29.8 g Fat",
+                "carbs1": "9.1 g Carbs",
+                "protein1": "21.7 g Protein",
+                "description1": "Stuffed with gently sautéed vegetables and lots of cheese. Yummy indeed Stuffed with gently sautéed.",
+
+                
+                "mainTitle2": "SIDE DISH",
+                "image2": "<img src=\"./assets/images/image1.png\" alt=\"\">",
+                "text2": "Veggie Omlette",
+                "title2": "Calories 954",
+                "allergies2": "Allergies?",
+                "fat2": "29.8 g Fat",
+                "carbs2": "9.1 g Carbs",
+                "protein2": "21.7 g Protein",
+                "description2": "Stuffed with gently sautéed vegetables and lots of cheese. Yummy indeed Stuffed with gently sautéed.",
+
+                
+                "mainTitle3": "SNAK",
+                "image3": "<img src=\"./assets/images/image1.png\" alt=\"\">",
+                "text3": "Veggie Omlette",
+                "title3": "Calories 954",
+                "allergies3": "Allergies?",
+                "fat3": "29.8 g Fat",
+                "carbs3": "9.1 g Carbs",
+                "protein3": "21.7 g Protein",
+                "description3": "Stuffed with gently sautéed vegetables and lots of cheese. Yummy indeed Stuffed with gently sautéed."
+
+              })  
+          </div> 
+          
+        </div>
+
+        
+      </div>
+    </div>
+
+  </div>
+
+  @@include('../partials/scripts/common.html')
+
+</body>
+
+</html>
