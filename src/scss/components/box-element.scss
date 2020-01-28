@@ -8,8 +8,64 @@
         &__top{
             border-radius: 8px 8px 0 0; 
             box-shadow: 0 3.5px 38px 0 rgba(0, 0, 0, 0.16);
-            padding-top: 50px; 
-            &__whiteCircle{
+            .checkcontainer {
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                margin-bottom: 12px;
+                cursor: pointer;
+                font-size: 22px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                padding-bottom: 50px;
+                &:hover input ~ .checkmark.orangeBox {
+                    background-color: #ffe7cb;
+                }
+                &:hover input ~ .checkmark.grayBox {
+                    background-color: #e7e7e7;
+                }
+                input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+                    &:checked ~ .checkmark {
+                        background-color: transparent;
+                        border: 1px solid #fff; 
+                        &:after {
+                            display: block;
+                        } 
+                    }
+                }
+                .checkmark {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    height: 30px;
+                    width: 30px;
+                    background-color: #fff;
+                    border-radius: 5px;
+                    box-shadow: 2px 2px 5px #8e8d8d;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                        left: 9px;
+                        top: 2px;
+                        width: 10px;
+                        height: 18px;
+                        border: solid white;
+                        border-width: 0 2px 2px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+            &__whiteCircle{   
                 width: 200px;
                 height: 200px; 
                 border-radius: 50%; 
@@ -17,7 +73,6 @@
                 margin-left: auto;
                 margin-right: auto; 
                 box-shadow: 0 13.5px 19.5px 0 rgba(0, 0, 0, 0.05);
-                img{}
             }
             h3{
                 margin: 0;
