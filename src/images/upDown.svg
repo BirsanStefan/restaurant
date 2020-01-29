@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="16" height="16" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="baseline-unfold_more-24px_copy_2" data-name="baseline-unfold_more-24px copy 2" clip-path="url(#clip-path)">
+    <g id="baseline-unfold_more-24px_copy" data-name="baseline-unfold_more-24px copy">
+      <path id="Path" d="M0,0H16V16H0Z" fill="none"/>
+      <path id="Shape" d="M3.06,10.667h0L.006,7.607l.94-.94L3.06,8.78,5.173,6.666l.947.94L3.061,10.666ZM.946,4h0L0,3.06,3.06,0,6.114,3.06,5.174,4,3.06,1.886.947,4Z" transform="translate(4.94 2.667)" fill="#909fbb"/>
+    </g>
+  </g>
+</svg>

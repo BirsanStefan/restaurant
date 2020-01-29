@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+  <div class="wrapper">
+
+    @@include('../partials/components/left.html')
+
+    <div class="right">
+
+        <div class="homeBtn">
+            <a href="index.html" class="homeBtn__link">
+              <img src="../images/icon12.svg" alt="">
+            </a>
+            <a href="subscriptions.html" class="homeBtn__link">
+              <span>/Subscriptions</span>
+            </a>
+            /123543
+        </div>
+
+        <div class="main-title home-subscr">
+            <h1>Subscription</h1>
+        </div>
+
+        <div class="searchAreaBox">
+            <div class="searchAreaBox__left">
+                <div class="searchArea">
+                    <form action="">
+                        <label for="searchInTable">SEARCH</label><br/>
+                        <button type="submit" class="searchInTableSubmit">
+                            <img src="../images/search-icon.svg" alt="">
+                        </button> 
+                        <input type="text" class="searchInTable" id="searchInTable" placeholder="Search">
+                    </form>
+                </div>  
+        
+                <a href="#" class="filterIcon">
+                    <img src="./assets/images/icon13.svg" alt="">
+                </a>
+        
+                <div class="button bottomBtn home-subscr">
+                    <a href="#" class="button-orange">
+                        CREATE NEW
+                    </a>
+                </div>
+            </div>
+
+            <div class="searchArea__right">
+                <div class="button topRightBtn home-subscr">
+                    <a href="#" class="button-empty-green">
+                        EXPORT DATA
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <table id="table" class="mainTable">
+            <thead class="bgThead">
+                <tr>
+                    <th class="noSort">SUBSCRIPTION ID</th>
+                    <th><span class="thText">CUSTOMER NAME</span></th>
+                    <th><span class="thText">SUBSCRIPTION PLAN</span></th>
+                    <th class="noSort"><span class="thText">MENU TYPE</span></th>
+                    <th><span class="thText">SUBSCRIPTION STATUS</span></th>
+                    <th class="noSort"><span class="thText">START DATE</span></th>
+                    <th class="exportsTD noSort noLine"><span class="thText">END DATE</span></th>
+                </tr>
+            </thead>
+
+
+            <tbody>
+                <tr class="trWhite">
+                    @@include('../partials/components/tableRow.html', {
+                        "number":"<a href=\"#\">123543</a>",
+                        "name":"<a href=\"#\">Khaled Hasan</a>",
+                        "plan":"One Month",
+                        "menuType":"Regular",
+                        "status":"Active",
+                        "startDate":"12th Mar 2019",
+                        "endDate":"12th Mar 2020" 
+                    })
+                </tr>
+                
+                <tr class="trGray">
+                    @@include('../partials/components/tableRow.html', {
+                        "number":"<a href=\"#\">123544</a>",
+                        "name":"<a href=\"#\">Khaled Hasan</a>",
+                        "plan":"One Month",
+                        "menuType":"Regular",
+                        "status":"Paused",
+                        "startDate":"12th Mar 2019",
+                        "endDate":"12th Mar 2020"
+                    })
+                </tr>
+                
+                <tr class="trWhite">
+                    @@include('../partials/components/tableRow.html', {
+                        "number":"<a href=\"#\">123545</a>",
+                        "name":"<a href=\"#\">Khaled Hasan</a>",
+                        "plan":"One Month",
+                        "menuType":"Regular",
+                        "status":"Ended",
+                        "startDate":"12th Mar 2019",
+                        "endDate":"12th Mar 2020"
+                    })
+                </tr>
+                
+                <tr class="trGray">
+                    @@include('../partials/components/tableRow.html', {
+                        "number":"<a href=\"#\">123546</a>",
+                        "name":"<a href=\"#\">Khaled Hasan</a>",
+                        "plan":"One Month",
+                        "menuType":"Regular",
+                        "status":"Refunded",
+                        "startDate":"12th Mar 2019",
+                        "endDate":"12th Mar 2020"
+                    })
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
+
+  </div>
+
+  @@include('../partials/scripts/common.html')
+
+</body>
+
+</html>
