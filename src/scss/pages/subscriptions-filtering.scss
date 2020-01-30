@@ -1,0 +1,152 @@
+.centerPopUp{
+    background: #bcbccb;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center; 
+    .filterBox{
+        width: 500px;
+        height: 550px;  
+        border-radius: 15px;
+        background-color: #f8f8f8;
+        padding: 20px 40px;
+        h1{
+            font-family: 'FuturaPT', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.32;
+            color: #231f20;
+            text-align: center;   
+            margin: 0; 
+        }
+        label{
+            font-family: 'FuturaPT', sans-serif;
+            font-size: 10px;
+            line-height: 1.31;
+            color: #062538;
+            margin-top: 20px; 
+        }
+        
+        .subscrPlan{
+            margin-top: 10px;
+            &__box{
+                display: flex;
+                align-items: center; 
+                margin-top: 5px; 
+                &-whiteBtn{ 
+                    width: 120px;  
+                    height: 30px;
+                    border-radius: 5px;
+                    box-shadow: 0 3px 5px 0 #dcdcdc;
+                    background-color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: 'FuturaPT', sans-serif;
+                    font-size: 9px;
+                    text-align: center;
+                    color: #696969;  
+                    &.margin-left{
+                        margin-left: 15px;  
+                    } 
+                }
+                &-orangeBtn{
+                    width: 100px;
+                    height: 30px;
+                    border-radius: 5px;
+                    background-color: #ffbe68;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center; 
+                    position: relative;
+                    border: none; 
+                    &.margin-left{
+                        margin-left: 15px;  
+                    } 
+                    &.margin-top{ 
+                        margin-top: 15px; 
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        top: 11px;
+                        left: 11px;     
+                        border-top: 7px solid #fff;
+                        border-left: 7px solid transparent;
+                        border-right: 7px solid transparent;
+                    }  
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: 11px;
+                        left: 13px;  
+                        border-top: 5px solid #ffbe68;
+                        border-left: 5px solid transparent;
+                        border-right: 5px solid transparent;
+                        z-index: 1; 
+                    } 
+                    span{
+                        font-family: 'FuturaPT', sans-serif;
+                        font-size: 9px;
+                        text-align: center;
+                        color: #fff; 
+                        padding-left: 12px; 
+                    }
+                }
+            }
+        } 
+        .formContent{
+            form{
+                .filterContentBox{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    .applyFilter{
+                        margin-right: 30px;
+                        input[type=submit]{
+                            width: 160px;
+                            height: 30px;
+                            border-radius: 5px;
+                            box-shadow: 0 3px 5px 0 rgba(141, 197, 219, 0.42);
+                            background-color: #8dc5db;
+                            -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0);
+                            font-family: 'FuturaPT', sans-serif;
+                            font-size: 10px;
+                            text-align: center;
+                            color: #fff;
+                            border: none;
+                            margin-top: 40px; 
+                            &:hover{
+                                background-color: #fff;
+                                color: #8dc5db;
+                            }
+                        }
+                    }
+                    .clearFilter{
+                        input[type=submit]{
+                            width: 160px;
+                            height: 30px;
+                            background-color: transparent;
+                            font-family: 'FuturaPT', sans-serif;
+                            font-size: 10px;
+                            text-align: center;
+                            color: #8dc5db;
+                            border: none;
+                            margin-top: 40px;  
+                            border-radius: 5px;
+                            &:hover{
+                                background-color: #8dc5db;
+                                color: #fff;
+                                -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0);
+                                box-shadow: 0 3px 5px 0 rgba(141, 197, 219, 0.42);
+                            }
+                        }
+                    }
+                }
+                
+
+            }
+        }
+    }
+} 

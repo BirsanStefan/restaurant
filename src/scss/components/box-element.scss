@@ -1,10 +1,11 @@
 .boxesContent{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    padding: 10px 25px 30px 25px; 
+    padding: 10px 25px 30px 25px;
     .box-element{
         width: 250px;
-        margin: 15px;
+        margin: 15px; 
         &__top{
             border-radius: 8px 8px 0 0; 
             box-shadow: 0 3.5px 38px 0 rgba(0, 0, 0, 0.16);
