@@ -2,6 +2,9 @@
 	width: 300px;
 	background-color: #e9f0ee;
 	min-height: 100vh;
+	@media only screen and (max-width: 954px){ 
+		display: none;
+	}
 	.profileInfo{
 		&__picture{
 			background-color: #a7a7a7;

@@ -11,7 +11,7 @@
             <h1>Filter</h1>
 
             <div class="subscrPlan">
-                <label for="">SUBSCRIPTION PLAN</label>
+                <p>SUBSCRIPTION PLAN</p>
                 <div class="subscrPlan__box">
                     <div class="subscrPlan__box-whiteBtn">
                         TWO WEEKS
@@ -24,7 +24,7 @@
             </div>
 
             <div class="subscrPlan">
-                <label for="">MENU TYPE</label>
+                <p>MENU TYPE</p>
                 <div class="subscrPlan__box">
                     <div class="subscrPlan__box-whiteBtn">
                         REGULAR
@@ -38,33 +38,67 @@
 
               
             <div class="subscrPlan">
-                <label for="">STATUS</label>
+                <p>STATUS</p>
                 <div class="subscrPlan__box">
                     <div class="subscrPlan__box-whiteBtn">
                         PENDING
                     </div>
 
-                    <button class="subscrPlan__box-orangeBtn margin-left">
+                    <button class="subscrPlan__box-orangeBtn">
                         <span>ACTIVE</span> 
                     </button>
                     
-                    <div class="subscrPlan__box-whiteBtn margin-left">
+                    <div class="subscrPlan__box-whiteBtn">
                         ENDED
                     </div>
 
-                    <button class="subscrPlan__box-orangeBtn margin-left">
+                    <button class="subscrPlan__box-orangeBtn margin-top">
                         <span>PAUSED</span> 
                     </button>
-                </div>
 
-                <button class="subscrPlan__box-orangeBtn margin-top">
-                    <span>CANCELED</span> 
-                </button>
+                    <button class="subscrPlan__box-orangeBtn margin-top">
+                        <span>CANCELED</span> 
+                    </button>
+                </div> 
+
             </div>
 
 
             <div class="formContent">
                 <form action="">
+
+                    <div class="startEndDate">
+                        <div class="startEndDate__elem">
+                            <p>START DATE</p>
+                            <div class="startEndDate__elem__box">
+                                <div class="startEndDate__elem__box__input">
+                                    <label for="from">FROM</label><br/>
+                                    <input type="text" name="from" placeholder="START DATE">
+                                </div>
+    
+                                <div class="startEndDate__elem__box__input">
+                                    <label for="to">TO</label><br/>
+                                    <input type="text" name="to" placeholder="TO DATE">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="startEndDate__elem">
+                            <p>END DATE</p>
+                            <div class="startEndDate__elem__box">
+                                <div class="startEndDate__elem__box__input">
+                                    <label for="from">FROM</label><br/>
+                                    <input type="text" name="from" placeholder="START DATE">
+                                </div>
+    
+                                <div class="startEndDate__elem__box__input">
+                                    <label for="to">TO</label><br/>
+                                    <input type="text" name="to" placeholder="TO DATE">
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
                     <div class="filterContentBox">
                         <div class="applyFilter">
                             <input type="submit" value="APPLY FILTER">
@@ -74,7 +108,7 @@
                         </div>
                     </div>
                 </form>
-            </div>
+            </div> 
             
 
         </div>

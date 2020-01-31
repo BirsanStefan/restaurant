@@ -31,12 +31,24 @@
         text-align: left;
         color: #062538;
         font-family: 'FuturaPT', sans-serif;
+        @media only screen and (max-width: 820px){
+            text-align: center;  
+        }
     }
 }
 .topMenu{
     display: flex;
     width: calc(100% + 44px);
     margin-left: -22px;
+    @media only screen and (max-width: 435px){
+        align-items: center;  
+    }
+    @media only screen and (max-width: 420px){
+        flex-wrap: wrap;   
+        width: 100%;
+        margin: 0;
+        border-bottom: 1px solid #cccccc;
+    } 
     .topMenuItem{
         display: block;
         background-color: #e8e8e8;
@@ -53,6 +65,15 @@
             color: #e8e8e8;
             background-color: #334b31;
         }
+        @media only screen and (max-width: 435px){
+            display: flex;
+            justify-content: center; 
+            align-items: center;  
+            min-height: 75px; 
+        }
+        @media only screen and (max-width: 420px){
+            border-bottom: 1px solid #cccccc;
+        }  
     }
     .topMenuItem.active{
         background-color: #4c6b49;
@@ -73,6 +94,9 @@
     box-shadow: 0 3.5px 16px 0 rgba(0, 0, 0, 0.05);
     &__title{
         padding-left: 25px; 
+        @media only screen and (max-width: 768px){
+            padding-left: 0; 
+        } 
     }
     .nextPrev{
         padding-left: 25px;  
@@ -89,6 +113,12 @@
     font-weight: 500;
     line-height: 1.35;
     color: #696969;
+    @media only screen and (max-width: 820px){
+        text-align: center; 
+    }
+    @media only screen and (max-width: 768px){
+        padding-left: 0; 
+    } 
     a{
         text-decoration: none;
         color: #696969;
@@ -102,6 +132,9 @@
 .breakfast{
     .mainContent__title{
         padding-top: 40px; 
+        @media only screen and (max-width: 768px){
+            padding-left: 0; 
+        }  
     }
 }
 

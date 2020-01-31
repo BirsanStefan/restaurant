@@ -15,6 +15,10 @@
     .weekdays-content{
         display: flex;
         padding-top: 15px;
+        @media only screen and (max-width: 391px){
+            flex-wrap: wrap; 
+            justify-content: flex-end; 
+        }
         &__item{
             font-family: 'FuturaPT', sans-serif;
             font-size: 17px;
@@ -33,6 +37,12 @@
             &:hover{
                 background-color: #334b31;
                 color: #e8e8e8;
+            }
+            @media only screen and (max-width: 768px){
+                font-size: 14px; 
+            }
+            @media only screen and (max-width: 420px){
+                font-size: 12px;  
             }
         }
         

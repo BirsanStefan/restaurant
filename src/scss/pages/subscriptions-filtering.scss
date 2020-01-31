@@ -5,12 +5,27 @@
     flex-wrap: wrap; 
     align-items: center;
     justify-content: center; 
+    @media only screen and (max-width: 320px){
+        text-align: center;
+    }
     .filterBox{
         width: 500px;
-        height: 550px;  
+        max-width: 100%; 
+        min-height: 550px;  
         border-radius: 15px;
         background-color: #f8f8f8;
         padding: 20px 40px;
+        position: relative;
+        &::after{
+            position: absolute;
+            top: 10px;  
+            right: 18px;
+            content: "X";
+            font-size: 20px;  
+            color: #cecece;
+            line-height: 32px;
+            text-align: center;
+        }
         h1{
             font-family: 'FuturaPT', sans-serif;
             font-size: 14px;
@@ -20,22 +35,26 @@
             text-align: center;   
             margin: 0; 
         }
-        label{
+        p{
             font-family: 'FuturaPT', sans-serif;
             font-size: 10px;
             line-height: 1.31;
             color: #062538;
             margin-top: 20px; 
+            margin-bottom: 0;
         }
         
         .subscrPlan{
             margin-top: 10px;
             &__box{
                 display: flex;
+                flex-wrap: wrap;
                 align-items: center; 
-                margin-top: 5px; 
+                @media only screen and (max-width: 320px){
+                    justify-content: center;
+                }  
                 &-whiteBtn{ 
-                    width: 120px;  
+                    width: 100px;  
                     height: 30px;
                     border-radius: 5px;
                     box-shadow: 0 3px 5px 0 #dcdcdc;
@@ -46,67 +65,126 @@
                     font-family: 'FuturaPT', sans-serif;
                     font-size: 9px;
                     text-align: center;
-                    color: #696969;  
-                    &.margin-left{
-                        margin-left: 15px;  
-                    } 
+                    color: #696969; 
+                    margin-right: 10px;  
+                    margin-top: 10px;  
                 }
                 &-orangeBtn{
-                    width: 100px;
+                    width: 90px;
                     height: 30px;
                     border-radius: 5px;
                     background-color: #ffbe68;
                     display: flex;
                     align-items: center;
                     justify-content: center; 
-                    position: relative;
                     border: none; 
-                    &.margin-left{
-                        margin-left: 15px;  
-                    } 
-                    &.margin-top{ 
-                        margin-top: 15px; 
+                    transition: all .25s linear;
+                    margin-right: 10px;
+                    margin-top: 10px;
+                    &:hover{
+                        box-shadow: 0 3px 5px 0 #dcdcdc;
                     }
-                    &::after{
-                        content: '';
-                        position: absolute;
-                        top: 11px;
-                        left: 11px;     
-                        border-top: 7px solid #fff;
-                        border-left: 7px solid transparent;
-                        border-right: 7px solid transparent;
-                    }  
-                    &::before{
-                        content: '';
-                        position: absolute;
-                        top: 11px;
-                        left: 13px;  
-                        border-top: 5px solid #ffbe68;
-                        border-left: 5px solid transparent;
-                        border-right: 5px solid transparent;
-                        z-index: 1; 
-                    } 
                     span{
                         font-family: 'FuturaPT', sans-serif;
                         font-size: 9px;
                         text-align: center;
                         color: #fff; 
                         padding-left: 12px; 
+                        transition: all .25s linear;
+                        position: relative;
+                        &::after{
+                            content: ''; 
+                            position: absolute;
+                            top: 2px;
+                            left: -6px;     
+                            border-top: 7px solid #fff;
+                            border-left: 7px solid transparent;
+                            border-right: 7px solid transparent;
+                        }  
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            top: 2px;
+                            left: -4px;   
+                            border-top: 5px solid #ffbe68;
+                            border-left: 5px solid transparent;
+                            border-right: 5px solid transparent;
+                            z-index: 1;  
+                        } 
                     }
+                    
                 }
             }
         } 
         .formContent{
             form{
+                .startEndDate{
+                    &__elem{
+                        p{
+                            font-family: 'FuturaPT', sans-serif;
+                            font-size: 12px;
+                            font-weight: 500;
+                            color: #696969; 
+                            margin-bottom: 0; 
+                        }
+                        &__box{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            align-items: center;
+                            @media only screen and (max-width: 320px){
+                                justify-content: center;
+                            }  
+                            &__input{
+                                label{
+                                    font-family: 'FuturaPT', sans-serif;
+                                    font-size: 10px; 
+                                    color: #062538;
+                                }
+                                input[type=text]{
+                                    margin-top: 5px; 
+                                    width: 190px; 
+                                    height: 30px; 
+                                    border-radius: 5px;
+                                    box-shadow: 0 2.5px 5px 0 rgba(133, 133, 133, 0.21);
+                                    background-color: #fff;
+                                    border: none;
+                                    font-family: 'FuturaPT', sans-serif;
+                                    font-size: 9px;
+                                    font-weight: 300;
+                                    line-height: 1.33;
+                                    color: #858585; 
+                                    position: relative;
+                                    /*&::before{
+                                        position: absolute;
+                                        top: 10px;
+                                        bottom: 10px;
+                                        content: "\e906";  -> icon-activity
+                                        font-size: 20px;  
+                                        color: #FFF;
+                                        line-height: 30px;
+                                        text-align: center;
+                                    }*/
+                                }
+                            } 
+                        }
+                    }
+                }
                 .filterContentBox{
                     display: flex;
+                    flex-wrap: wrap;
                     justify-content: center;
                     width: 100%;
                     .applyFilter{
-                        margin-right: 30px;
+                        margin-right: 30px; 
+                        @media only screen and (max-width: 429px){
+                            margin-left: auto;
+                            margin-right: auto;
+                        } 
                         input[type=submit]{
                             width: 160px;
-                            height: 30px;
+                            max-width: 100%;
+                            min-height: 30px;
                             border-radius: 5px;
                             box-shadow: 0 3px 5px 0 rgba(141, 197, 219, 0.42);
                             background-color: #8dc5db;
@@ -116,15 +194,21 @@
                             text-align: center;
                             color: #fff;
                             border: none;
-                            margin-top: 40px; 
+                            margin-top: 25px; 
+                            transition: all .25s linear;
                             &:hover{
                                 background-color: #fff;
                                 color: #8dc5db;
+                                border: 1px solid #8dc5db;
                             }
                         }
                     }
                     .clearFilter{
-                        input[type=submit]{
+                        @media only screen and (max-width: 429px){
+                            margin-left: auto;
+                            margin-right: auto; 
+                        }
+                        input[type=submit]{ 
                             width: 160px;
                             height: 30px;
                             background-color: transparent;
@@ -133,13 +217,17 @@
                             text-align: center;
                             color: #8dc5db;
                             border: none;
-                            margin-top: 40px;  
+                            margin-top: 25px;  
                             border-radius: 5px;
+                            transition: all .25s linear;
                             &:hover{
                                 background-color: #8dc5db;
                                 color: #fff;
                                 -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0);
                                 box-shadow: 0 3px 5px 0 rgba(141, 197, 219, 0.42);
+                            }
+                            @media only screen and (max-width: 399px){
+                                margin-top: 10px; 
                             }
                         }
                     }

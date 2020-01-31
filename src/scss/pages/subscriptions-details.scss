@@ -21,6 +21,9 @@
         background: #7fb879;
         border: 2px solid #7fb879;
     }
+    @media only screen and (max-width: 320px){
+        margin-right: auto;  
+    }
     .button-empty-green{
         text-decoration: none;
         display: block;  
@@ -51,14 +54,27 @@
     &__wrap{
         display: flex;
         justify-content: space-between;  
+        @media only screen and (max-width: 820px){
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         &__element{
-            width: 32%; 
+            width: 32%;
+            @media only screen and (max-width: 820px){
+                width: 50%; 
+            } 
+            @media only screen and (max-width: 820px){
+                width: 100%; 
+            } 
             &__myBtn{  
                 width: 150px;
                 height: 35px; 
                 transition: all .25s linear;
                 margin-top: 20px; 
-                margin-left: auto;    
+                margin-left: auto; 
+                @media only screen and (max-width: 820px){
+                    margin-right: auto; 
+                }   
                 .button-green{
                     text-decoration: none;
                     display: block;  
@@ -103,6 +119,9 @@
             }
             &__endSubscr{
                 padding-top: 30px; 
+                @media only screen and (max-width: 820px){
+                    text-align: center;
+                }  
                 &__link{
                     text-decoration: none;
                     text-align: right; 
@@ -126,7 +145,10 @@
                 font-weight: 500;
                 line-height: 32px;  
                 color: #696969;
-                padding-top: 10px;   
+                padding-top: 10px; 
+                @media only screen and (max-width: 820px){
+                    text-align: center;
+                }  
                 a{
                     text-decoration: none;
                     color: #696969;
@@ -134,9 +156,15 @@
                     &:hover{
                         color: #8dc5db;  
                     }
-                }
+                    @media only screen and (max-width: 725px){
+                        color: #8dc5db;  
+                    }
+                } 
                 span{
-                    padding-left: 30px; 
+                    padding-left: 30px;
+                    @media only screen and (max-width: 725px){
+                        color: #8dc5db;  
+                    }
                 }
                 .delivery-details{
                     padding-left: 0; 
@@ -146,6 +174,9 @@
         .rightElem{
             width: 25%;
             text-align: right;  
+            @media only screen and (max-width: 768px){
+                width: 100%;
+            }
         }
         .delivery-elem{
             width: 80%;    
@@ -167,14 +198,58 @@
 .mainContent{
     &__mealsBox{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between; 
+        @media only screen and (max-width: 420px){
+            display: block;
+        }
         &__elem{
-            width: 50%;
+            width: 50%; 
+            @media only screen and (max-width: 420px){
+                width: 100%;
+            }
             .whiteBoxA__wrap__element__myBtn{
                 margin-top: 50px; 
                 margin-left: auto;
                 margin-right: 30px; 
+                @media only screen and (max-width: 420px){
+                    margin-right: auto;
+                    margin-top: 30px;
+                }
             }
         }
+        .taLeft{
+            .main-title{
+                h1{
+                    @media only screen and (max-width: 820px){
+                        text-align: left; 
+                    }
+                    @media only screen and (max-width: 420px){
+                        text-align: center;
+                    }
+                }
+            } 
+            .smallText{
+                p{
+                    @media only screen and (max-width: 820px){
+                        text-align: left; 
+                    }
+                    @media only screen and (max-width: 420px){
+                        text-align: center;
+                    }
+                    span{
+                        @media only screen and (max-width: 320px){
+                            color: #8dc5db;
+                        }
+                    }
+                }
+            }
+            @media only screen and (max-width: 768px){
+                padding-left: 25px;
+            }
+            @media only screen and (max-width: 420px){
+                padding-left: 0;
+            }
+        }
+
     }
 }
